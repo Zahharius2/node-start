@@ -1,13 +1,13 @@
 const fs = require("fs");
 const path = require("path");
 
-// // Создаём директорию "notes"
+// // создать директорию notes
 // fs.mkdir(path.join(__dirname, "notes"), err => {
 //     if (err) throw err;
 //     console.log("Folder created");
 // });
 
-// // Создаём файл "mynotes.txt" и записываем в него данные
+// // создать mynotes.txt и записать туда "Hello world "
 // fs.writeFile(
 //     path.join(__dirname, "notes", "mynotes.txt"),
 //     "Hello world ",
@@ -15,7 +15,7 @@ const path = require("path");
 //         if (err) throw err;
 //         console.log("File created");
 
-//         // Дописываем в файл строку "I love Node.js"
+//         // дописать в файл что-то из разряда "I love Node.js"
 //         fs.appendFile(
 //             path.join(__dirname, "notes", "mynotes.txt"),
 //             "I love Node.js",
@@ -25,7 +25,7 @@ const path = require("path");
 //             }
 //         );
 
-//         // Читаем содержимое файла и выводим его в консоль
+//         // прочесть содержимое файла и кинуть его в консоль
 //         fs.readFile(
 //             path.join(__dirname, "notes", "mynotes.txt"),
 //             "utf8",
@@ -35,7 +35,7 @@ const path = require("path");
 //             }
 //         );
 
-//         // Переименовываем файл "mynotes.txt" в "notes.txt"
+//         // переименовать mynotes.txt в notes.txt
 //         fs.rename(
 //             path.join(__dirname, "notes", "mynotes.txt"),
 //             path.join(__dirname, "notes", "notes.txt"),
