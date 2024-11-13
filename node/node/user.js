@@ -1,11 +1,11 @@
 const user = {
-    name: 'vasya',
-    age: 30
+    name: "Vasya",
+    age: 20
 }
 
 module.exports = {
-    user: user,
+    user:user,
     sayHello(){
-        console.log('hello')
+        console.log("Hello")
     }
 }

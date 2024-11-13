@@ -1,19 +1,18 @@
 {
-  "name": "nodejs-basics",
+  "name": "node-start",
   "version": "1.0.0",
-  "description": "nodejs tutorial package",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
-  "keywords": [
-    "nodejs",
-    "js"
-  ],
-  "author": "Sergei <my@mail.ee>",
+  "author": "",
   "license": "ISC",
+  "dependencies": {
+    "path": "^0.12.7"
+  },
   "devDependencies": {
-    "nodemon": "^1.18.11"
+    "nodemon": "^3.1.7"
   }
 }

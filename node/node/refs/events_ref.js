@@ -1,18 +1,36 @@
-const EventEmitter = require('events')
+const EventEmitter = require("events");
 
-class Logger extends EventEmitter{
-    log(message){
-        this.emit('message', `${message} ${Date.not()}`)
+// class Logger extends EventEmitter {
+//     log(msg) {
+//         console.log(msg)
+//         this.emit("message", `${msg} ${Date.now()}`)
+//     }
+// }
+
+// const logger = new Logger()
+
+// logger.on("message", (msg) => {
+//     console.log(msg)
+// })
+
+// logger.log("Hello")
+// logger.log("Hello")
+// logger.log("Hello")
+
+
+class Notifier extends EventEmitter {
+    notify(message) {
+        console.log("Notification sent:", message);
+        this.emit("notification", `${message} at ${new Date().toLocaleTimeString()}`);
     }
 }
 
-const logger = new Logger()
+const notifier = new Notifier();
 
-Logger.on('message', data =>{
-    console.log(data)
-})
+notifier.on("notification", (msg) => {
+    console.log("Received notification:", msg);
+});
 
-
-logger.log('First')
-logger.log('Second')
-logger.log('Third')
+notifier.notify("You have a new message");
+notifier.notify("Your order has been shipped");
+notifier.notify("Meeting starts in 15 minutes");
